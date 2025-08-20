@@ -68,18 +68,35 @@
     <!-- Mobile Navigation -->
     <div class="lg:hidden px-4 py-3">
       <div class="flex items-center justify-between">
-        <div class="flex-1"></div>
+        <!-- Added house icon on the left -->
+        <button
+          onclick={toggleMobileMenu}
+          class="p-2 rounded-md transition-colors border border-black"
+          style="background-color: #441e4b;"
+          aria-label="Home"
+        >
+          <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          </svg>
+        </button>
         
-        <!-- Added "Navigation" text with outline for mobile menu button -->
+        <!-- Made both navigation text and hamburger button clickable with updated styling -->
         <div class="flex items-center gap-2">
-          <span class="text-sm font-semibold text-gray-700 border border-gray-300 px-2 py-1 rounded">Navigation</span>
           <button
             onclick={toggleMobileMenu}
-            class="p-2 rounded-md text-gray-700 hover:text-purple-600 hover:bg-purple-50 transition-colors border border-gray-300"
+            class="text-sm font-semibold text-gray-700 border border-gray-300 px-2 py-1 rounded hover:bg-gray-50 transition-colors"
+          >
+            Navigation
+          </button>
+          <button
+            onclick={toggleMobileMenu}
+            class="p-2 rounded-md transition-colors border border-black"
+            style="background-color: #441e4b;"
             aria-expanded={mobileMenuOpen}
           >
             <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <!-- Changed hamburger lines to white -->
+            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {#if !mobileMenuOpen}
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               {:else}
