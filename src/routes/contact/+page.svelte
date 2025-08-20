@@ -8,16 +8,49 @@
     subject: '',
     message: ''
   });
-  
+  let isSubmitting = $state(false);
+  let submitMessage = $state('');
+
   onMount(() => {
     mounted = true;
   });
   
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form or show success message
+    isSubmitting = true;
+    submitMessage = '';
+    
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('subject', formData.subject);
+      formDataToSend.append('message', formData.message);
+      
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        body: formDataToSend
+      });
+      
+      const result = await response.text();
+      
+      if (response.ok) {
+        submitMessage = result;
+        // Reset form on success
+        formData = {
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        };
+      } else {
+        submitMessage = `Error: ${result}`;
+      }
+    } catch (error) {
+      submitMessage = `Error: ${error.message}`;
+    } finally {
+      isSubmitting = false;
+    }
   }
 </script>
 
@@ -151,10 +184,18 @@
             
             <button
               type="submit"
-              class="w-full bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors"
+              disabled={isSubmitting}
+              class="w-full bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Send Message
+              {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
+            
+            <!-- Added success/error message display -->
+            {#if submitMessage}
+              <div class="p-4 rounded-lg {submitMessage.startsWith('Error') ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'}">
+                {submitMessage}
+              </div>
+            {/if}
           </form>
         </div>
       </div>

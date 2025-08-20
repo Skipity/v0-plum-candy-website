@@ -179,18 +179,18 @@
       <div class="mb-16 {mounted ? 'animate-fade-in-up' : ''}" style="animation-delay: 0.5s;">
         <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Publications</h2>
         <div class="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-xl p-8 shadow-lg">
-          <div class="flex items-start gap-6">
-            <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+          <div class="flex flex-col md:flex-row md:items-start gap-6">
+            <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0 mx-auto md:mx-0">
               <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
               </svg>
             </div>
-            <div>
+            <div class="text-center md:text-left">
               <h3 class="text-2xl font-bold text-gray-900 mb-4">Co-Author: "The Best Book on Quantum Computing"</h3>
               <p class="text-lg text-gray-700 mb-6">
                 Co-authored a comprehensive guide to quantum computing principles, making complex concepts accessible to students and professionals alike. This groundbreaking work bridges the gap between theoretical quantum mechanics and practical computing applications.
               </p>
-              <div class="flex flex-wrap gap-3">
+              <div class="flex flex-wrap gap-3 justify-center md:justify-start">
                 <span class="px-4 py-2 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">Quantum Physics</span>
                 <span class="px-4 py-2 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">Computer Science</span>
                 <span class="px-4 py-2 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">Technical Writing</span>
@@ -201,26 +201,54 @@
         </div>
       </div>
 
-      <!-- Language Mastery Section -->
-      <div class="mb-16 {mounted ? 'animate-fade-in-up' : ''}" style="animation-delay: 0.55s;">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Native Language Mastery</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl p-8 shadow-lg">
-            <div class="flex items-start gap-6">
-              <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
-                </svg>
-              </div>
-              <div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4">English</h3>
-                <p class="text-lg text-gray-700">
-                  Native fluency with exceptional written and verbal communication skills, demonstrated through published works and technical writing.
-                </p>
+      <!-- Eagle Scout Achievement -->
+      <div class="mb-16 {mounted ? 'animate-fade-in-up' : ''}" style="animation-delay: 0.6s;">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Perseverance</h2>
+        <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-8 shadow-lg">
+          <div class="flex flex-col md:flex-row md:items-start gap-6">
+            <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0 mx-auto md:mx-0">
+              <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+              </svg>
+            </div>
+            <div class="text-center md:text-left">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Eagle Scout</h3>
+              <p class="text-lg text-gray-700 mb-6">
+                Aaliyah will be the first girl in New York to earn All 139 Merit Badges, and has earned every achievable Eagle Palm. This unprecedented achievement demonstrates exceptional dedication, leadership, and commitment to personal growth and community service.
+              </p>
+              <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Leadership</span>
+                <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Community Service</span>
+                <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Project Management</span>
+                <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">All 139 Merit Badges</span>
+                <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Eagle Palms</span>
               </div>
             </div>
           </div>
-          
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center bg-indigo-50 rounded-xl p-12 mb-16 {mounted ? 'animate-fade-in-up' : ''}" style="animation-delay: 0.7s;">
+        <h3 class="text-3xl font-bold text-gray-900 mb-6">Ready to Collaborate?</h3>
+        <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+          Interested in working together on STEM education, writing projects, speaking engagements, or quantum computing initiatives?
+        </p>
+        <a 
+          href="/contact" 
+          class="inline-flex items-center gap-3 bg-indigo-600 text-white font-semibold py-4 px-10 rounded-lg hover:bg-indigo-700 transition-colors text-lg shadow-lg hover:shadow-xl"
+        >
+          Get In Touch
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Language Mastery Section - moved to bottom -->
+      <div class="mb-16 {mounted ? 'animate-fade-in-up' : ''}" style="animation-delay: 0.75s;">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Language Mastery</h2>
+        <div class="grid grid-cols-1 gap-8">
           <div class="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-8 shadow-lg">
             <div class="flex items-start gap-6">
               <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -237,50 +265,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Eagle Scout Achievement -->
-      <div class="mb-16 {mounted ? 'animate-fade-in-up' : ''}" style="animation-delay: 0.6s;">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Perseverance</h2>
-        <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-8 shadow-lg">
-          <div class="flex items-start gap-6">
-            <div class="w-16 h-16 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
-              <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-2xl font-bold text-gray-900 mb-4">Eagle Scout Achievement</h3>
-              <p class="text-lg text-gray-700 mb-6">
-                Aaliyah will be the first girl in New York to earn All 139 Merit Badges, and has earned every achievable Eagle Palm. This unprecedented achievement demonstrates exceptional dedication, leadership, and commitment to personal growth and community service.
-              </p>
-              <div class="flex flex-wrap gap-3">
-                <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Leadership</span>
-                <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Community Service</span>
-                <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Project Management</span>
-                <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">All 139 Merit Badges</span>
-                <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Eagle Palms</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Call to Action -->
-      <div class="text-center bg-indigo-50 rounded-xl p-12 {mounted ? 'animate-fade-in-up' : ''}" style="animation-delay: 0.7s;">
-        <h3 class="text-3xl font-bold text-gray-900 mb-6">Ready to Collaborate?</h3>
-        <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-          Interested in working together on STEM education, writing projects, speaking engagements, or quantum computing initiatives?
-        </p>
-        <a 
-          href="/contact" 
-          class="inline-flex items-center gap-3 bg-indigo-600 text-white font-semibold py-4 px-10 rounded-lg hover:bg-indigo-700 transition-colors text-lg shadow-lg hover:shadow-xl"
-        >
-          Get In Touch
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
-        </a>
       </div>
     </div>
   </section>

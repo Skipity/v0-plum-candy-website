@@ -159,8 +159,6 @@
           
           <p>The shopkeeper put his hands up quickly, then asked, "What bag? You got one for me or..."</p>
           
-          <p>Rowan replied with a swagger, "Yes, please. And I'll settle the bill inside."</p>
-          
           <p>Rowan's chin flicked upward sharp as a switchblade. Not worried, but amused. Amused by the robber's dime-novel demeanor and kid-cowboy mask.</p>
           
           <p>He swung the gun towards Rowan. "I said hands up!"</p>
@@ -255,7 +253,7 @@
           
           <p>The innkeeper chuckled. "Some say they're the taste of the town. Keeps folks coming back."</p>
           
-          <p>Rowan smiled, letting the candy dissolve slowly as he looked around the cozy inn. The sweetness faded, giving way to that sharp, bitter sting. He rolled it across his tongue. It was really good! — harsh, but strangely satisfying.</p>
+          <p>Rowan smiled, letting the candy dissolve slowly as he looked around the cozy inn. It was really good! — harsh, but strangely satisfying.</p>
           
           <p>"You're in luck," the innkeeper said, sliding a key across the counter. "Room 7, top of the stairs. Best view in the house. Enjoy your stay, Mr...?"</p>
           

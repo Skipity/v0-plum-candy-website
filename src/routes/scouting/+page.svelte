@@ -104,7 +104,7 @@
             The problem is that there is no official badge or medal to commemorate the achievement. You get Eagle, and they are like "If you want to earn more merit badges, you get these Eagle Palms thingies". But the whole Eagle Palms system is muddled — you get a Silver Palm for 20 badges above Eagle, A Gold one for 10, and a Bronze for 5. Then mix and match based on how many you've earned. But almost no one notices if you have 3 palms vs 8.
           </p>
           <p>
-            No one is officially pointing to the top of the mountain and saying, "This could be YOU."
+            No one is officially pointing to the top of the mountain and saying to young scouts, "This could be YOU."
           </p>
           <p>
             If someone had pointed from the beginning at that mountain top, thousands more might have achieved it.

@@ -129,7 +129,7 @@
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <!-- Book Image -->
-      <div class="flex justify-center lg:justify-start order-1 lg:order-1 mt-2 md:mt-0 {mounted ? 'animate-slide-in-left animate-float' : 'loading'}">
+      <div class="flex justify-center lg:justify-start order-1 lg:order-1 mt-8 md:mt-2 {mounted ? 'animate-slide-in-left animate-float' : 'loading'}">
         <img 
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-plum-candy-2MKe0phl0eH1LvvoPyimOd0UyzyQKE.webp" 
           alt="Plum Candy book mockups - Trade Paperback and Premium Hardcover editions"
@@ -496,7 +496,7 @@
         </div>
       </div>
       
-      <div class="card-enhanced rounded-xl p-10 scroll-reveal hover-lift bg-white/10 backdrop-blur-sm" style="animation-delay: 0.2s;">
+      <div class="card-enhanced rounded-xl p-6 md:p-10 scroll-reveal hover-lift bg-white/10 backdrop-blur-sm" style="animation-delay: 0.2s;">
         <h3 class="text-3xl lg:text-4xl font-bold text-white mb-8">
           Bet on a Future Classic
         </h3>
@@ -725,8 +725,8 @@
     </div>
     
     <!-- Removed the non-functional "Reserve Your Collector's Edition" button -->
-    <div class="text-center card-enhanced bg-white/10 backdrop-blur-sm rounded-xl p-12 scroll-reveal hover-scale">
-      <blockquote class="text-3xl lg:text-4xl font-bold text-white mb-8 leading-relaxed">
+    <div class="text-center card-enhanced bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-12 scroll-reveal hover-scale">
+      <blockquote class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-8 leading-relaxed">
         "This can be your story too — the true story where you get to be the hero that says, 'I was there at the beginning.'"
       </blockquote>
     </div>
