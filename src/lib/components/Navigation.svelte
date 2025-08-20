@@ -70,21 +70,24 @@
       <div class="flex items-center justify-between">
         <div class="flex-1"></div>
         
-        <!-- Mobile menu button -->
-        <button
-          onclick={toggleMobileMenu}
-          class="p-2 rounded-md text-gray-700 hover:text-purple-600 hover:bg-purple-50 transition-colors"
-          aria-expanded={mobileMenuOpen}
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            {#if !mobileMenuOpen}
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            {:else}
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            {/if}
-          </svg>
-        </button>
+        <!-- Added "Navigation" text with outline for mobile menu button -->
+        <div class="flex items-center gap-2">
+          <span class="text-sm font-semibold text-gray-700 border border-gray-300 px-2 py-1 rounded">Navigation</span>
+          <button
+            onclick={toggleMobileMenu}
+            class="p-2 rounded-md text-gray-700 hover:text-purple-600 hover:bg-purple-50 transition-colors border border-gray-300"
+            aria-expanded={mobileMenuOpen}
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              {#if !mobileMenuOpen}
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              {:else}
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              {/if}
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
     
