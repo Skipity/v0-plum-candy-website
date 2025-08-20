@@ -68,9 +68,9 @@
     <!-- Mobile Navigation -->
     <div class="lg:hidden px-4 py-3">
       <div class="flex items-center justify-between">
-        <!-- Added house icon on the left -->
-        <button
-          onclick={toggleMobileMenu}
+        <!-- Changed home button to navigate to home page instead of opening menu -->
+        <a
+          href="/"
           class="p-2 rounded-md transition-colors border border-black"
           style="background-color: #441e4b;"
           aria-label="Home"
@@ -78,7 +78,7 @@
           <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
             <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
           </svg>
-        </button>
+        </a>
         
         <!-- Made both navigation text and hamburger button clickable with updated styling -->
         <div class="flex items-center gap-2">
