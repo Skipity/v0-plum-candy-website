@@ -1,5 +1,5 @@
 name = "v0-plum-candy-website"
-pages_build_output_dir = "."
+pages_build_output_dir = ".svelte-kit/cloudflare"
 
 [[services]]
 binding = "EMAIL_SENDER"
