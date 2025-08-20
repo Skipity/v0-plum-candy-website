@@ -1,20 +1,12 @@
 <script>
-  import { onMount } from 'svelte';
-
-  let mounted = $state(false);
-
-  onMount(() => {
-    mounted = true;
-  });
-
   const videos = [
-    'NAEFluxX4Y4',
-    'NHJJstKtf1A', 
-    'WUj0MMCWW70',
-    '706jf1wj9bs',
-    'kyd8qiFU9vY',
-    '4HjFPz0fAZo',
-    'spo2wdEXHSc'
+    { id: 'NAEFluxX4Y4', title: 'Kitesurfing Video 1' },
+    { id: 'NHJJstKtf1A', title: 'Kitesurfing Video 2' }, 
+    { id: 'WUj0MMCWW70', title: 'Kitesurfing Video 3' },
+    { id: '706jf1wj9bs', title: 'Kitesurfing Video 4' },
+    { id: 'kyd8qiFU9vY', title: 'Kitesurfing Video 5' },
+    { id: '4HjFPz0fAZo', title: 'Kitesurfing Video 6' },
+    { id: 'spo2wdEXHSc', title: 'Kitesurfing Video 7' }
   ];
 </script>
 
@@ -58,25 +50,22 @@
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12 animate-fade-in-up">
         Aaliyah Learning Kitesurfing Videos
       </h2>
-      <div class="space-y-8">
-        {#each videos as videoId, index}
-          <div class="w-full max-w-4xl mx-auto">
-            <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up">
-              {#if mounted}
-                <iframe
-                  src="https://www.youtube.com/embed/{videoId}?rel=0&modestbranding=1"
-                  title="Kitesurfing Video {index + 1}"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                  class="w-full h-full"
-                ></iframe>
-              {:else}
-                <div class="w-full h-full flex items-center justify-center bg-gray-200">
-                  <div class="text-gray-500">Loading video...</div>
-                </div>
-              {/if}
-            </div>
+      <!-- Replaced iframe embeds with simple YouTube links -->
+      <div class="space-y-6 max-w-2xl mx-auto">
+        {#each videos as video, index}
+          <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade-in-up">
+            <h3 class="text-lg font-semibold text-gray-900 mb-3">{video.title}</h3>
+            <a 
+              href="https://www.youtube.com/watch?v={video.id}" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors duration-200"
+            >
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 12l-6-4h12l-6 4z"/>
+              </svg>
+              Watch on YouTube
+            </a>
           </div>
         {/each}
       </div>
