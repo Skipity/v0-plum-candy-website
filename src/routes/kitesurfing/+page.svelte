@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from 'svelte';
+
   const videos = [
     { id: 'NAEFluxX4Y4', title: 'Kitesurfing Video 1' },
     { id: 'NHJJstKtf1A', title: 'Kitesurfing Video 2' }, 
@@ -50,22 +52,25 @@
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12 animate-fade-in-up">
         Aaliyah Learning Kitesurfing Videos
       </h2>
-      <!-- Replaced iframe embeds with simple YouTube links -->
-      <div class="space-y-6 max-w-2xl mx-auto">
+      <div class="space-y-8">
         {#each videos as video, index}
-          <div class="bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade-in-up">
-            <h3 class="text-lg font-semibold text-gray-900 mb-3">{video.title}</h3>
-            <a 
-              href="https://www.youtube.com/watch?v={video.id}" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="inline-flex items-center px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors duration-200"
-            >
-              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 12l-6-4h12l-6 4z"/>
-              </svg>
-              Watch on YouTube
-            </a>
+          <div class="w-full max-w-4xl mx-auto">
+            <div class="bg-white rounded-lg border border-gray-200 p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up" style="animation-delay: {0.1 * index}s;">
+              <div class="text-center">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">{video.title}</h3>
+                <a 
+                  href="https://www.youtube.com/watch?v={video.id}" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center px-6 py-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors duration-200"
+                >
+                  <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 12l-6-4h12l-6 4z"/>
+                  </svg>
+                  Watch on YouTube
+                </a>
+              </div>
+            </div>
           </div>
         {/each}
       </div>
@@ -105,3 +110,21 @@
     </p>
   </div>
 </footer>
+
+<style>
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+    opacity: 0;
+  }
+</style>
