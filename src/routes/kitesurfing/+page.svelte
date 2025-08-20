@@ -61,7 +61,7 @@
       <div class="space-y-8">
         {#each videos as videoId, index}
           <div class="w-full max-w-4xl mx-auto">
-            <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up" style="animation-delay: {0.1 * index}s;">
+            <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up">
               {#if mounted}
                 <iframe
                   src="https://www.youtube.com/embed/{videoId}?rel=0&modestbranding=1"
