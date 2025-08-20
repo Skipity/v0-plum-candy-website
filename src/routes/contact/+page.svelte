@@ -2,17 +2,19 @@
   import { onMount } from 'svelte';
   
   let mounted = $state(false);
-  let formData = $state({
+  let formData = {
     name: '',
     email: '',
     subject: '',
     message: ''
-  });
-  let isSubmitting = $state(false);
-  let submitMessage = $state('');
+  };
+  let isSubmitting = false;
+  let submitMessage = '';
+  let domain = '';
 
   onMount(() => {
     mounted = true;
+    domain = window.location.hostname;
   });
   
   async function handleSubmit(event) {
@@ -72,7 +74,7 @@
     </div>
   </section>
 
-  <!-- Contact Form -->
+  <!-- Contact Instructions -->
   <section class="py-20 px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -126,77 +128,26 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
+        <!-- Contact Instructions -->
         <div class="bg-gray-50 rounded-lg p-8 {mounted ? 'animate-fade-in-up' : ''}" style="animation-delay: 0.2s;">
-          <form onsubmit={handleSubmit} class="space-y-6">
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
-              <input
-                type="text"
-                id="name"
-                bind:value={formData.name}
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                placeholder="Your full name"
-              />
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">How to Reach Me</h3>
+          
+          <div class="space-y-6">
+            <div class="p-6 bg-white rounded-lg border border-gray-200">
+              <p class="text-gray-600 mb-4">
+                If you want to reach me, you can send an email.
+              </p>
+              <p class="text-gray-600 mb-4">
+                Send to plumcandy@ and the domain is the domain in the address bar. The one that starts with aaliyah and ends with .br
+              </p>
+              <p class="text-gray-600 mb-4">
+                We keep it like this so it's slightly harder for bots to scrape.
+              </p>
+              <p class="text-gray-600">
+                Alternatively, you can message me on X.
+              </p>
             </div>
-            
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-              <input
-                type="email"
-                id="email"
-                bind:value={formData.email}
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                placeholder="your.email@example.com"
-              />
-            </div>
-            
-            <div>
-              <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
-              <select
-                id="subject"
-                bind:value={formData.subject}
-                required
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-              >
-                <option value="">Select a subject</option>
-                <option value="speaking">Speaking Engagement</option>
-                <option value="media">Media Inquiry</option>
-                <option value="bookclub">Book Club Visit</option>
-                <option value="general">General Question</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-              <textarea
-                id="message"
-                bind:value={formData.message}
-                required
-                rows="6"
-                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-                placeholder="Tell me about your inquiry..."
-              ></textarea>
-            </div>
-            
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              class="w-full bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
-            </button>
-            
-            <!-- Added success/error message display -->
-            {#if submitMessage}
-              <div class="p-4 rounded-lg {submitMessage.startsWith('Error') ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'}">
-                {submitMessage}
-              </div>
-            {/if}
-          </form>
+          </div>
         </div>
       </div>
     </div>
