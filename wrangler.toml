@@ -1,6 +1,6 @@
 name = "v0-plum-candy-website"
 pages_build_output_dir = "."
 
-[[send_email]]
-name = "CONTACT_FORM_EMAIL"
-destination_address = "plumcandy@aaliyah.com.br"
+[[services]]
+binding = "EMAIL_SENDER"
+service = "email-sender"
