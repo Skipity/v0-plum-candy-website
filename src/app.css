@@ -1,0 +1,350 @@
+@import "tailwindcss";
+
+:root {
+  /* Updated to use the specific purple color palette provided */
+  --purple-1: #b67fc0;
+  --purple-2: #9c67a5;
+  --purple-3: #7a4c82;
+  --purple-4: #693c71;
+  --purple-5: #512e57;
+  --purple-6: #441e4b;
+  --off-white: #fefefe;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+}
+
+body,
+button,
+input {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Added comprehensive animation system with modern effects */
+/* Core animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.4s ease-out forwards;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.loaded {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease-out;
+}
+
+/* Enhanced card effects */
+.card-enhanced {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card-enhanced:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Pricing card effects */
+.pricing-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card.most-popular {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.pricing-card.most-popular:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Testimonial card effects */
+.testimonial-card {
+  border-left: 4px solid #a855f7;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(168, 85, 247, 0.15);
+  border-left-color: #7c3aed;
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Button enhancements */
+button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Shimmer effect for premium buttons */
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Scroll reveal animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animations */
+.scroll-reveal:nth-child(1) {
+  transition-delay: 0s;
+}
+.scroll-reveal:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.scroll-reveal:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.scroll-reveal:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+/* Updated gradient to be vertical using the specific purple colors */
+.gradient-purple {
+  background: linear-gradient(
+    to bottom,
+    var(--purple-1) 0%,
+    var(--purple-2) 20%,
+    var(--purple-3) 40%,
+    var(--purple-4) 60%,
+    var(--purple-5) 80%,
+    var(--purple-6) 100%
+  );
+}
+
+/* Mobile menu transitions */
+.mobile-menu-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.mobile-menu-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.mobile-menu-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.mobile-menu-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+/* Added accessibility support for reduced motion */
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .animate-float {
+    animation: none;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Enhanced mobile responsiveness */
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .hover-lift:hover,
+  .hover-scale:hover {
+    transform: none;
+  }
+
+  .pricing-card:hover,
+  .testimonial-card:hover {
+    transform: none;
+  }
+
+  /* Touch-friendly animations */
+  .pricing-card:active {
+    transform: scale(0.98);
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+}
+
+/* Added focus states for accessibility */
+/* Focus states for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .card-enhanced {
+    border: 2px solid;
+  }
+
+  .pricing-card {
+    border: 2px solid;
+  }
+}
+
+/* Added alternating background color for links section */
+.bg-alternating {
+  background-color: var(--purple-6);
+}
+
+/* Added dark purple background for Prodigy Edition section */
+.bg-prodigy-dark {
+  background-color: var(--purple-6);
+}
