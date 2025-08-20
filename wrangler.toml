@@ -3,4 +3,4 @@ pages_build_output_dir = ".svelte-kit/cloudflare"
 
 [[services]]
 binding = "EMAIL_SENDER"
-service = "email-sender"
+service = "contact-form-email"  # Updated to match the actual worker name from the instructions
