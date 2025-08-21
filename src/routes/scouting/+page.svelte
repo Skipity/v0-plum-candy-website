@@ -75,8 +75,15 @@
           <p>
             She's hiked, biked, paddled, and skied hundreds of wilderness miles. She's done welding, sawing, hammering and building; geocaching, mechanicing, golfing and fishing; scuba diving, sculpture, rock climbing, and painting; surveying, shooting and planting and plumbing. Designing and planning... oh so much planning! and calling and meeting with so many phenomenal people through Scouting that it makes your head spin.
           </p>
+          
+          <!-- Added block quote for First Girl in NY achievement -->
+          <blockquote class="border-l-4 border-green-700 pl-6 ml-5 text-center text-3xl italic text-green-700 my-12 flex justify-center items-center gap-3">
+            "First Girl in NY to earn Every Merit Badge" 
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/scouting-america-T4nVKnZb8UTdLcLkIwxpnp2wdx8Yro.webp" alt="Scouting America logo" class="inline-block" />
+          </blockquote>
+          
           <p>
-            Now she is just 1 requirement away from being the first girl in New York to earn every Scouting merit badge: she must cross the wake on waterskis 4 times. 🏄‍♀️
+            Now she is just 1 requirement away from being the <strong>first girl in New York to earn every Scouting America merit badge:</strong> she must cross the wake on waterskis 4 times. 🏄‍♀️
           </p>
           <p>
             Since Eagle, the remaining 39 merit badges on her quest to get them all demanded more grit and determination than the prior 100 and Eagle Rank combined.
@@ -104,19 +111,16 @@
             For one, it's hard. Like really, really hard. But scouts do hard things all the time.
           </p>
           <p>
-            The problem is that there is no official badge or medal to commemorate the achievement. You get Eagle, and they are like "If you want to earn more merit badges, you get these Eagle Palms thingies". But the whole Eagle Palms system is muddled — you get a Silver Palm for 20 badges above Eagle, A Gold one for 10, and a Bronze for 5. Then mix and match based on how many you've earned. But almost no one notices if you have 3 palms vs 8.
+            The problem is that there is no official badge or medal to commemorate the achievement. You get Eagle, and they are like "If you want to earn more merit badges, you get these Eagle Palms thingies". But the whole Eagle Palms system is a muddled mess — you get a Silver Palm for 20 badges above Eagle, A Gold one for 10, and a Bronze for 5. Then mix and match based on how many you've earned. But almost no one notices if you have 3 palms vs 8.
           </p>
           <p>
             No one is officially pointing to the top of the mountain and saying to young scouts, "This could be YOU." If someone had been pointing at that mountain top from the beginning, thousands more would have achieved it. 
           </p>
           <p>
-            And it's worth doing because the entirety of the Merit Badge curriculum is greater than the sum of its parts. The richness and breadth of learning a little something about everything is a magical and enlightening experience.
-          </p>
-          <p>
             It's worth it.
           </p> 
           <p>
-            The storied adventure of Scouting is made thrilling and worthwhile by the loving support friends, troops, parents, and counselors. It's why Scouting has endured for more than a century, and will continue to make lives brighter for centuries to come.
+            The storied adventure of Scouting America is made thrilling and worthwhile by the loving support of friends, troops, parents, and counselors. It's why Scouting has endured for more than a century, and will continue to make lives brighter for centuries to come.
           </p>
         </div>
       </div>

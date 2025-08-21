@@ -77,7 +77,7 @@
           
           <p>Darkness presses in, heavy, sapping — but not the kind of dark to hide in. You don't see anyone, but are you alone? No.</p>
           
-          <p><strong>Your body knows before the mind. Hair stands up — a million nerve extenders seek out danger. The crawling sensation up your spine snaps a whip: <em>glance behind</em>.</strong></p>
+          <p>Your body knows before the mind. Hair stands up — a million nerve extenders seek out danger. The crawling sensation up your spine snaps a whip: <em>glance behind</em>.</p>
           
           <p>Freeze. Hold that noisy breath. Listen.</p>
           
