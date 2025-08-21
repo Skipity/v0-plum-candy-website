@@ -120,3 +120,17 @@
     </div>
   </section>
 </div>
+
+<!-- Footer -->
+<footer class="bg-[#220f25] text-gray-400 py-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-6xl mx-auto text-center">
+    <p class="text-sm">
+      &copy; {new Date().getFullYear()} Aaliyah Corley. All rights reserved.
+    </p>
+    <div class="mt-4 space-x-6">
+      <a href="/privacy-policy" class="text-sm text-gray-400 hover:text-gray-300 transition-colors">Privacy Policy</a>
+      <a href="/return-policy" class="text-sm text-gray-400 hover:text-gray-300 transition-colors">Return Policy</a>
+      <a href="/terms-conditions" class="text-sm text-gray-400 hover:text-gray-300 transition-colors">Terms & Conditions</a>
+    </div>
+  </div>
+</footer>

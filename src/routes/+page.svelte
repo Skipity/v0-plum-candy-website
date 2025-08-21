@@ -736,6 +736,14 @@
 <!-- Footer Section -->
 <footer class="bg-[#220f25] text-gray-400 py-8 px-4 sm:px-6 lg:px-8">
   <div class="max-w-6xl mx-auto text-center">
+    <!-- Added legal page links to footer -->
+    <div class="flex flex-wrap justify-center gap-4 mb-4">
+      <a href="/privacy-policy" class="text-sm hover:text-white transition-colors">Privacy Policy</a>
+      <span class="text-sm">•</span>
+      <a href="/return-policy" class="text-sm hover:text-white transition-colors">Return Policy</a>
+      <span class="text-sm">•</span>
+      <a href="/terms-conditions" class="text-sm hover:text-white transition-colors">Terms & Conditions</a>
+    </div>
     <p class="text-sm">
       &copy; {new Date().getFullYear()} Aaliyah Corley. All rights reserved.
     </p>

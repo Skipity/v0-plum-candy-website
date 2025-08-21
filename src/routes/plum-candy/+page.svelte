@@ -429,6 +429,12 @@
       <p class="text-sm">
         &copy; {new Date().getFullYear()} Aaliyah Corley. All rights reserved.
       </p>
+      <!-- Added legal links to footer -->
+      <div class="mt-4 space-x-6">
+        <a href="/privacy-policy" class="text-sm text-gray-400 hover:text-gray-300 transition-colors">Privacy Policy</a>
+        <a href="/return-policy" class="text-sm text-gray-400 hover:text-gray-300 transition-colors">Return Policy</a>
+        <a href="/terms-conditions" class="text-sm text-gray-400 hover:text-gray-300 transition-colors">Terms & Conditions</a>
+      </div>
     </div>
   </footer>
 </div>
