@@ -121,6 +121,15 @@
   </section>
 </div>
 
+<!-- Added link to Court of Honor Program before footer -->
+<div class="py-8 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <div class="max-w-4xl mx-auto text-center">
+    <a href="/scouting/program" class="inline-flex items-center px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors font-medium">
+      Go back to Court of Honor Program
+    </a>
+  </div>
+</div>
+
 <!-- Footer -->
 <footer class="bg-[#220f25] text-gray-400 py-8 px-4 sm:px-6 lg:px-8">
   <div class="max-w-6xl mx-auto text-center">
