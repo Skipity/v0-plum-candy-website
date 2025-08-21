@@ -1,10 +1,4 @@
 <script>
-	function scrollToEagles() {
-		const eaglesSection = document.getElementById('eagles-section');
-		if (eaglesSection) {
-			eaglesSection.scrollIntoView({ behavior: 'smooth' });
-		}
-	}
 </script>
 
 <svelte:head>
@@ -56,12 +50,6 @@
 					</p>
 					<p class="text-xl font-semibold text-[#441e4b] text-center italic">
 						"Once an Eagle, Always an Eagle."
-					</p>
-					<p class="text-center">
-						<!-- Changed link to button with scroll action -->
-						<button onclick={scrollToEagles} class="inline-flex items-center px-6 py-3 bg-[#441e4b] text-white rounded-lg hover:bg-purple-700 transition-colors font-medium">
-							See All the Eagles that Troop 163 produced
-						</button>
 					</p>
 				</div>
 			</div>
@@ -140,8 +128,8 @@
 		</div>
 	</section>
 
-	<!-- Added id to Eagle Scouts section for scroll targeting -->
-	<section id="eagles-section" class="py-12 px-4 bg-gradient-to-b from-transparent to-purple-50">
+	<!-- Replaced incorrect Eagle Scout list with the actual Troop 163 list from 1934-2025 -->
+	<section class="py-12 px-4 bg-gradient-to-b from-transparent to-purple-50">
 		<div class="max-w-6xl mx-auto">
 			<div class="bg-white rounded-lg shadow-lg overflow-hidden">
 				<div class="bg-gradient-to-r from-[#441e4b] to-purple-600 px-6 py-4">
@@ -536,6 +524,12 @@
 							</div>
 							<div class="p-3 bg-purple-50 rounded border-l-4 border-purple-300">
 								<p class="font-medium text-gray-800">Kenny Albrecht (February 15, 2024)</p>
+							</div>
+							<div class="p-3 bg-purple-50 rounded border-l-4 border-purple-300">
+								<p class="font-medium text-gray-800">Rebecca Sult (August 28, 2024)</p>
+							</div>
+							<div class="p-3 bg-purple-50 rounded border-l-4 border-purple-300">
+								<p class="font-medium text-gray-800">Amelia Wolkoff (September 5, 2024)</p>
 							</div>
 							<div class="p-3 bg-gradient-to-r from-[#441e4b] to-purple-600 rounded border-l-4 border-yellow-400 shadow-lg">
 								<p class="font-bold text-white text-lg">Aaliyah Corley (January 16, 2025)</p>
