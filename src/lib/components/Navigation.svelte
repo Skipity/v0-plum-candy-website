@@ -83,13 +83,13 @@
         <!-- Made both navigation text and hamburger button clickable with updated styling -->
         <div class="flex items-center gap-2">
           <button
-            onclick={toggleMobileMenu}
+            on:click={toggleMobileMenu}
             class="text-sm font-semibold text-gray-700 border border-gray-300 px-2 py-1 rounded hover:bg-gray-50 transition-colors"
           >
             Navigation
           </button>
           <button
-            onclick={toggleMobileMenu}
+            on:click={toggleMobileMenu}
             class="p-2 rounded-md transition-colors border border-black"
             style="background-color: #441e4b;"
             aria-expanded={mobileMenuOpen}
@@ -115,7 +115,7 @@
           {#each navItems as item}
             <a
               href={item.href}
-              onclick={closeMobileMenu}
+              on:click={closeMobileMenu}
               class="block px-4 py-3 text-lg font-bold rounded-lg transition-colors {
                 $page.url.pathname === item.href
                   ? 'bg-purple-100 text-purple-800'
@@ -131,7 +131,7 @@
             href="https://x.com/CorleyAaliyah"
             target="_blank"
             rel="noopener noreferrer"
-            onclick={closeMobileMenu}
+            on:click={closeMobileMenu}
             class="flex items-center px-4 py-3 text-lg font-bold text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors"
           >
             <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">

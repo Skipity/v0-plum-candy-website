@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
+  import PayPalButton from '$lib/PayPalButton.svelte';
   
   let mounted = $state(false);
   let showCollectorDetails = $state(false);
@@ -29,15 +30,19 @@
       if (data.region_code && taxRates[data.region_code]) {
         userState = data.region_code;
         taxRate = taxRates[data.region_code];
+        // Store in localStorage for PayPal component
+        localStorage.setItem('userState', userState);
       } else {
         // Default to Nassau County, NY rate if detection fails
         userState = 'NY';
         taxRate = 0.0863;
+        localStorage.setItem('userState', 'NY');
       }
     } catch (error) {
       // Fallback to Nassau County, NY rate
       userState = 'NY';
       taxRate = 0.0863;
+      localStorage.setItem('userState', 'NY');
     }
     
     const observerOptions = {
@@ -60,40 +65,6 @@
     
     return () => observer.disconnect();
   });
-  
-  function createPayPalForm(itemName, basePrice) {
-    const tax = Math.round(basePrice * taxRate * 100) / 100;
-    const total = Math.round((basePrice + tax) * 100) / 100;
-    
-    const form = document.createElement('form');
-    form.method = 'POST';
-    form.action = 'https://www.paypal.com/cgi-bin/webscr';
-    form.target = '_blank';
-    
-    const fields = {
-      'cmd': '_xclick',
-      'business': 'plumcandy@aaliyah.com.br',
-      'item_name': itemName,
-      'amount': basePrice.toFixed(2),
-      'tax': tax.toFixed(2),
-      'currency_code': 'USD',
-      'return': 'https://aaliyah.com.br/thank-you',
-      'cancel_return': 'https://aaliyah.com.br/',
-      'notify_url': 'https://aaliyah.com.br/paypal-ipn'
-    };
-    
-    Object.entries(fields).forEach(([name, value]) => {
-      const input = document.createElement('input');
-      input.type = 'hidden';
-      input.name = name;
-      input.value = value;
-      form.appendChild(input);
-    });
-    
-    document.body.appendChild(form);
-    form.submit();
-    document.body.removeChild(form);
-  }
   
   function scrollToContent() {
     const prodigySection = document.getElementById('prodigy-edition');
@@ -162,13 +133,13 @@
               </div>
               <div class="flex items-center gap-4">
                 <p class="text-3xl font-bold text-white">$18</p>
-                <!-- Updated button to use PayPal integration -->
-                <button 
-                  onclick={() => createPayPalForm('Plum Candy - Trade Paperback', 18)}
-                  class="bg-white text-purple-800 font-semibold py-3 px-6 rounded-lg hover:bg-purple-50 transition-colors whitespace-nowrap"
-                >
-                  Reserve Now
-                </button>
+                <PayPalButton 
+                  itemName="Plum Candy - Trade Paperback" 
+                  basePrice={18} 
+                  buttonId="trade-paperback"
+                  buttonText="Reserve Now"
+                  buttonClass="bg-white text-purple-800 font-semibold py-3 px-6 rounded-lg hover:bg-purple-50 transition-colors whitespace-nowrap"
+                />
               </div>
             </div>
           </div>
@@ -188,13 +159,13 @@
               </div>
               <div class="flex items-center gap-4">
                 <p class="text-3xl font-bold text-white">$32</p>
-                <!-- Updated button to use PayPal integration -->
-                <button 
-                  onclick={() => createPayPalForm('Plum Candy - Premium Hardcover', 32)}
-                  class="bg-white text-purple-800 font-semibold py-3 px-6 rounded-lg hover:bg-purple-50 transition-colors whitespace-nowrap"
-                >
-                  Reserve Now
-                </button>
+                <PayPalButton 
+                  itemName="Plum Candy - Premium Hardcover" 
+                  basePrice={32} 
+                  buttonId="premium-hardcover"
+                  buttonText="Reserve Now"
+                  buttonClass="bg-white text-purple-800 font-semibold py-3 px-6 rounded-lg hover:bg-purple-50 transition-colors whitespace-nowrap"
+                />
               </div>
             </div>
           </div>
@@ -228,78 +199,78 @@
                     <h5 class="text-white font-semibold mb-2">Tier 1 (The Inner Circle)</h5>
                     <p class="text-purple-100 mb-2">Numbers 001-010</p>
                     <p class="text-2xl font-bold text-white">$500</p>
-                    <!-- Updated button to use PayPal integration -->
-                    <button 
-                      onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Inner Circle)', 500)}
-                      class="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
-                    >
-                      Reserve Now
-                    </button>
+                    <PayPalButton 
+                      itemName="Plum Candy - Collector's Edition (Inner Circle)" 
+                      basePrice={500} 
+                      buttonId="collector-inner-circle"
+                      buttonText="Reserve Now"
+                      buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
+                    />
                   </div>
                   
                   <div class="card-enhanced rounded-lg p-4 hover-scale">
                     <h5 class="text-white font-semibold mb-2">Lucky Numbers</h5>
                     <p class="text-purple-100 mb-2">100, 777, 888, 1000, 2000, 3000, 4000, 5000</p>
                     <p class="text-2xl font-bold text-white">$400</p>
-                    <!-- Updated button to use PayPal integration -->
-                    <button 
-                      onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Lucky Numbers)', 400)}
-                      class="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
-                    >
-                      Reserve Now
-                    </button>
+                    <PayPalButton 
+                      itemName="Plum Candy - Collector's Edition (Lucky Numbers)" 
+                      basePrice={400} 
+                      buttonId="collector-lucky"
+                      buttonText="Reserve Now"
+                      buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
+                    />
                   </div>
                   
                   <div class="card-enhanced rounded-lg p-4 hover-scale">
                     <h5 class="text-white font-semibold mb-2">Tier 2 (The Vanguard)</h5>
                     <p class="text-purple-100 mb-2">Numbers 011-99</p>
                     <p class="text-2xl font-bold text-white">$300</p>
-                    <!-- Updated button to use PayPal integration -->
-                    <button 
-                      onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (The Vanguard)', 300)}
-                      class="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
-                    >
-                      Choose Number
-                    </button>
+                    <PayPalButton 
+                      itemName="Plum Candy - Collector's Edition (The Vanguard)" 
+                      basePrice={300} 
+                      buttonId="collector-vanguard"
+                      buttonText="Choose Number"
+                      buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
+                    />
                   </div>
                   
                   <div class="card-enhanced rounded-lg p-4 hover-scale">
                     <h5 class="text-white font-semibold mb-2">Tier 3 (Charter Members)</h5>
                     <p class="text-purple-100 mb-2">Numbers 101-500</p>
                     <p class="text-2xl font-bold text-white">$200</p>
-                    <!-- Updated button to use PayPal integration -->
-                    <button 
-                      onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Charter Members)', 200)}
-                      class="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
-                    >
-                      Choose Number
-                    </button>
+                    <PayPalButton 
+                      itemName="Plum Candy - Collector's Edition (Charter Members)" 
+                      basePrice={200} 
+                      buttonId="collector-charter"
+                      buttonText="Choose Number"
+                      buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
+                    />
                   </div>
                   
                   <div class="card-enhanced rounded-lg p-4 hover-scale">
                     <h5 class="text-white font-semibold mb-2">Pick Your Number</h5>
                     <p class="text-purple-100 mb-2">Choose any available number</p>
                     <p class="text-2xl font-bold text-white">$100</p>
-                    <!-- Updated button to use PayPal integration -->
-                    <button 
-                      onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Pick Your Number)', 100)}
-                      class="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
-                    >
-                      Choose Number
-                    </button>
+                    <PayPalButton 
+                      itemName="Plum Candy - Collector's Edition (Pick Your Number)" 
+                      basePrice={100} 
+                      buttonId="collector-pick"
+                      buttonText="Choose Number"
+                      buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
+                    />
                   </div>
                   
                   <div class="card-enhanced rounded-lg p-4 hover-scale">
                     <h5 class="text-white font-semibold mb-2">Next Available</h5>
                     <p class="text-purple-100 mb-2">Receive an available number</p>
                     <p class="text-2xl font-bold text-white">$75</p>
-                    <!-- Updated button to use PayPal integration -->
-                    <button 
-                      onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Next Available)', 75)}
-                      class="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
-                    >
-                      Reserve Now
-                    </button>
+                    <PayPalButton 
+                      itemName="Plum Candy - Collector's Edition (Next Available)" 
+                      basePrice={75} 
+                      buttonId="collector-next"
+                      buttonText="Reserve Now"
+                      buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
+                    />
                   </div>
                 </div>
                 
@@ -533,12 +504,13 @@
           <div class="text-purple-200 text-lg">1-10</div>
           <div class="text-white font-bold text-2xl">$500</div>
           <div>
-            <button 
-              onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Inner Circle)', 500)}
-              class="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors text-lg"
-            >
-              Reserve
-            </button>
+            <PayPalButton 
+              itemName="Plum Candy - Collector's Edition (Inner Circle)" 
+              basePrice={500} 
+              buttonId="collector-inner-circle-desktop"
+              buttonText="Reserve"
+              buttonClass="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors text-lg"
+            />
           </div>
         </div>
         
@@ -548,12 +520,13 @@
           <div class="text-purple-200 text-lg">100, 777, 888, 1000+</div>
           <div class="text-white font-bold text-2xl">$400</div>
           <div>
-            <button 
-              onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Lucky Numbers)', 400)}
-              class="bg-purple-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-400 transition-colors text-lg"
-            >
-              Reserve
-            </button>
+            <PayPalButton 
+              itemName="Plum Candy - Collector's Edition (Lucky Numbers)" 
+              basePrice={400} 
+              buttonId="collector-lucky-desktop"
+              buttonText="Reserve"
+              buttonClass="bg-purple-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-400 transition-colors text-lg"
+            />
           </div>
         </div>
         
@@ -563,12 +536,13 @@
           <div class="text-purple-200 text-lg">011-099</div>
           <div class="text-white font-bold text-2xl">$300</div>
           <div>
-            <button 
-              onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (The Vanguard)', 300)}
-              class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-400 transition-colors text-lg"
-            >
-              Reserve
-            </button>
+            <PayPalButton 
+              itemName="Plum Candy - Collector's Edition (The Vanguard)" 
+              basePrice={300} 
+              buttonId="collector-vanguard-desktop"
+              buttonText="Reserve"
+              buttonClass="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-400 transition-colors text-lg"
+            />
           </div>
         </div>
         
@@ -578,12 +552,13 @@
           <div class="text-purple-200 text-lg">101-500</div>
           <div class="text-white font-bold text-2xl">$200</div>
           <div>
-            <button 
-              onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Charter Members)', 200)}
-              class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-400 transition-colors text-lg"
-            >
-              Choose
-            </button>
+            <PayPalButton 
+              itemName="Plum Candy - Collector's Edition (Charter Members)" 
+              basePrice={200} 
+              buttonId="collector-charter-desktop"
+              buttonText="Choose"
+              buttonClass="bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-400 transition-colors text-lg"
+            />
           </div>
         </div>
         
@@ -593,12 +568,13 @@
           <div class="text-purple-200 text-lg">Any available</div>
           <div class="text-white font-bold text-2xl">$100</div>
           <div>
-            <button 
-              onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Pick Your Number)', 100)}
-              class="bg-orange-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-orange-400 transition-colors text-lg"
-            >
-              Choose
-            </button>
+            <PayPalButton 
+              itemName="Plum Candy - Collector's Edition (Pick Your Number)" 
+              basePrice={100} 
+              buttonId="collector-pick-desktop"
+              buttonText="Choose"
+              buttonClass="bg-orange-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-orange-400 transition-colors text-lg"
+            />
           </div>
         </div>
         
@@ -608,12 +584,13 @@
           <div class="text-purple-200 text-lg">Random assignment</div>
           <div class="text-white font-bold text-2xl">$75</div>
           <div>
-            <button 
-              onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Next Available)', 75)}
-              class="bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-400 transition-colors text-lg"
-            >
-              Reserve
-            </button>
+            <PayPalButton 
+              itemName="Plum Candy - Collector's Edition (Next Available)" 
+              basePrice={75} 
+              buttonId="collector-next-desktop"
+              buttonText="Reserve"
+              buttonClass="bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-400 transition-colors text-lg"
+            />
           </div>
         </div>
       </div>
@@ -629,12 +606,13 @@
             </div>
             <div class="text-white font-bold text-2xl">$500</div>
           </div>
-          <button 
-            onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Inner Circle)', 500)}
-            class="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors"
-          >
-            Reserve
-          </button>
+          <PayPalButton 
+            itemName="Plum Candy - Collector's Edition (Inner Circle)" 
+            basePrice={500} 
+            buttonId="collector-inner-circle-mobile"
+            buttonText="Reserve"
+            buttonClass="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors"
+          />
         </div>
         
         <!-- Lucky Numbers -->
@@ -646,12 +624,13 @@
             </div>
             <div class="text-white font-bold text-2xl">$400</div>
           </div>
-          <button 
-            onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Lucky Numbers)', 400)}
-            class="w-full bg-purple-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-400 transition-colors"
-          >
-            Reserve
-          </button>
+          <PayPalButton 
+            itemName="Plum Candy - Collector's Edition (Lucky Numbers)" 
+            basePrice={400} 
+            buttonId="collector-lucky-mobile"
+            buttonText="Reserve"
+            buttonClass="w-full bg-purple-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-purple-400 transition-colors"
+          />
         </div>
         
         <!-- Tier 2 -->
@@ -663,12 +642,13 @@
             </div>
             <div class="text-white font-bold text-2xl">$300</div>
           </div>
-          <button 
-            onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (The Vanguard)', 300)}
-            class="w-full bg-blue-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-400 transition-colors"
-          >
-            Reserve
-          </button>
+          <PayPalButton 
+            itemName="Plum Candy - Collector's Edition (The Vanguard)" 
+            basePrice={300} 
+            buttonId="collector-vanguard-mobile"
+            buttonText="Reserve"
+            buttonClass="w-full bg-blue-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-400 transition-colors"
+          />
         </div>
         
         <!-- Tier 3 -->
@@ -680,12 +660,13 @@
             </div>
             <div class="text-white font-bold text-2xl">$200</div>
           </div>
-          <button 
-            onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Charter Members)', 200)}
-            class="w-full bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-400 transition-colors"
-          >
-            Choose
-          </button>
+          <PayPalButton 
+            itemName="Plum Candy - Collector's Edition (Charter Members)" 
+            basePrice={200} 
+            buttonId="collector-charter-mobile"
+            buttonText="Choose"
+            buttonClass="w-full bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-400 transition-colors"
+          />
         </div>
         
         <!-- Pick Your Number -->
@@ -697,12 +678,13 @@
             </div>
             <div class="text-white font-bold text-2xl">$100</div>
           </div>
-          <button 
-            onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Pick Your Number)', 100)}
-            class="w-full bg-orange-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-orange-400 transition-colors"
-          >
-            Choose
-          </button>
+          <PayPalButton 
+            itemName="Plum Candy - Collector's Edition (Pick Your Number)" 
+            basePrice={100} 
+            buttonId="collector-pick-mobile"
+            buttonText="Choose"
+            buttonClass="w-full bg-orange-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-orange-400 transition-colors"
+          />
         </div>
         
         <!-- Next Available -->
@@ -714,12 +696,13 @@
             </div>
             <div class="text-white font-bold text-2xl">$75</div>
           </div>
-          <button 
-            onclick={() => createPayPalForm('Plum Candy - Collector\'s Edition (Next Available)', 75)}
-            class="w-full bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-400 transition-colors"
-          >
-            Reserve
-          </button>
+          <PayPalButton 
+            itemName="Plum Candy - Collector's Edition (Next Available)" 
+            basePrice={75} 
+            buttonId="collector-next-mobile"
+            buttonText="Reserve"
+            buttonClass="w-full bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-400 transition-colors"
+          />
         </div>
       </div>
     </div>
