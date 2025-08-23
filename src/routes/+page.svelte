@@ -202,7 +202,7 @@
                     <PayPalButton 
                       itemName="Plum Candy - Collector's Edition (Inner Circle)" 
                       basePrice={500} 
-                      buttonId="collector-inner-circle"
+                      buttonId="collector-inner-circle-hero"
                       buttonText="Reserve Now"
                       buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
                     />
@@ -215,7 +215,7 @@
                     <PayPalButton 
                       itemName="Plum Candy - Collector's Edition (Lucky Numbers)" 
                       basePrice={400} 
-                      buttonId="collector-lucky"
+                      buttonId="collector-lucky-hero"
                       buttonText="Reserve Now"
                       buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
                     />
@@ -228,7 +228,7 @@
                     <PayPalButton 
                       itemName="Plum Candy - Collector's Edition (The Vanguard)" 
                       basePrice={300} 
-                      buttonId="collector-vanguard"
+                      buttonId="collector-vanguard-hero"
                       buttonText="Choose Number"
                       buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
                     />
@@ -241,7 +241,7 @@
                     <PayPalButton 
                       itemName="Plum Candy - Collector's Edition (Charter Members)" 
                       basePrice={200} 
-                      buttonId="collector-charter"
+                      buttonId="collector-charter-hero"
                       buttonText="Choose Number"
                       buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
                     />
@@ -254,7 +254,7 @@
                     <PayPalButton 
                       itemName="Plum Candy - Collector's Edition (Pick Your Number)" 
                       basePrice={100} 
-                      buttonId="collector-pick"
+                      buttonId="collector-pick-hero"
                       buttonText="Choose Number"
                       buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
                     />
@@ -267,7 +267,7 @@
                     <PayPalButton 
                       itemName="Plum Candy - Collector's Edition (Next Available)" 
                       basePrice={75} 
-                      buttonId="collector-next"
+                      buttonId="collector-next-hero"
                       buttonText="Reserve Now"
                       buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
                     />
