@@ -87,15 +87,6 @@
           </p>
           <p>
             Since Eagle, the remaining 39 merit badges on her quest to get them all demanded more grit and determination than the prior 100 and Eagle Rank combined.
-          </p>
-          <p>
-            No one is officially pointing to the top of the mountain and saying to young scouts, "This could be YOU." If someone had been pointing at that mountain top from the beginning, thousands more would have achieved it. 
-          </p>
-          <p>
-            And it's worth doing because the entirety of the Merit Badge curriculum is greater than the sum of its parts. The richness and breadth of learning a little something about everything is a magical and enlightening experience.
-          </p>
-          <p>
-            It's worth it.
           </p> 
         </div>
       </div>
