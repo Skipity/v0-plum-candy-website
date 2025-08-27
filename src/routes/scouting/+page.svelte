@@ -30,10 +30,10 @@
   <section class="bg-gradient-to-br from-green-100 to-green-200 py-20 px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto text-center">
       <h1 class="text-4xl sm:text-5xl font-bold text-green-900 mb-6" class:animate-fade-in-up={mounted}>
-        Scouting America Journey
+        First Girl in NY to Earn Every Merit Badge
       </h1>
       <p class="text-xl text-green-700 mb-8" class:animate-fade-in-up={mounted} style="animation-delay: 0.1s;">
-        The Path to Eagle & Every Merit Badge
+        Aaliyah's Journey in Scouting America to Eagle & Beyond
       </p>
     </div>
   </section>
@@ -46,10 +46,7 @@
         <h2 class="text-4xl font-bold text-gray-900 mb-6">The Path to Eagle</h2>
         <div class="text-lg text-gray-700 space-y-6">
           <p>
-            Aaliyah joined Scouting on Halloween in 2021. By summer camp in July, she had racked up 36 merit badges, but was still Scout rank. One of those badges was Architecture, where she had Jeff Roberts as a counselor, who told her about Troop 163G. Rockville Centre, Troop 163, has been around since Scouting came to America, and has a tradition of raising scouts to eagle. 
-            <button onclick={goToEaglesList} class="text-green-600 hover:text-green-800 underline bg-transparent border-none cursor-pointer">
-              Link to List
-            </button>
+            Aaliyah joined Scouting on Halloween in 2021. By summer camp in July, she had racked up 36 merit badges, but was still Scout rank. One of those badges was Architecture, where she had Jeff Roberts as a counselor, who told her about Troop 163G. Rockville Centre, Troop 163, has been around since Scouting came to America, and has a tradition of raising scouts to eagle.
           </p>
           <p>
             She met with Scoutmaster Steve Bo and the Troop. After that first year at Onteora, Aaliyah decided that 163G would be a fantastic fit.
@@ -83,10 +80,13 @@
           </blockquote>
           
           <p>
-            Now she is just 1 requirement away from being the <strong>first girl in New York to earn every Scouting America merit badge:</strong> she must cross the wake on waterskis 4 times. 🏄‍♀️
+            Her final requirement to earn all 139 badges? was to cross both boat wakes 4 times on waterskis. 🏄‍♀️
           </p>
           <p>
             Since Eagle, the remaining 39 merit badges on her quest to get them all demanded more grit and determination than the prior 100 and Eagle Rank combined.
+          </p>
+          <p>
+            But she did it!
           </p> 
         </div>
       </div>
