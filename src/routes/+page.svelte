@@ -198,10 +198,10 @@
                   <div class="card-enhanced rounded-lg p-4 hover-scale">
                     <h5 class="text-white font-semibold mb-2">Tier 1 (The Inner Circle)</h5>
                     <p class="text-purple-100 mb-2">Numbers 001-010</p>
-                    <p class="text-2xl font-bold text-white">$500</p>
+                    <p class="text-2xl font-bold text-white">$2500</p>
                     <PayPalButton 
                       itemName="Plum Candy - Collector's Edition (Inner Circle)" 
-                      basePrice={500} 
+                      basePrice={2500} 
                       buttonId="collector-inner-circle-hero"
                       buttonText="Reserve Now"
                       buttonClass="w-full mt-3 bg-white/20 text-white py-2 px-4 rounded hover:bg-white/30 transition-colors"
@@ -502,11 +502,11 @@
         <div class="grid grid-cols-4 gap-4 p-6 border-b border-white/10 hover:bg-white/5 transition-colors">
           <div class="text-white font-semibold text-lg">The Inner Circle</div>
           <div class="text-purple-200 text-lg">1-10</div>
-          <div class="text-white font-bold text-2xl">$500</div>
+          <div class="text-white font-bold text-2xl">$2500</div>
           <div>
             <PayPalButton 
               itemName="Plum Candy - Collector's Edition (Inner Circle)" 
-              basePrice={500} 
+              basePrice={2500} 
               buttonId="collector-inner-circle-desktop"
               buttonText="Reserve"
               buttonClass="bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors text-lg"
@@ -604,11 +604,11 @@
               <h4 class="text-white font-bold text-xl">The Inner Circle</h4>
               <p class="text-purple-200">Numbers 1-10</p>
             </div>
-            <div class="text-white font-bold text-2xl">$500</div>
+            <div class="text-white font-bold text-2xl">$2500</div>
           </div>
           <PayPalButton 
             itemName="Plum Candy - Collector's Edition (Inner Circle)" 
-            basePrice={500} 
+            basePrice={2500} 
             buttonId="collector-inner-circle-mobile"
             buttonText="Reserve"
             buttonClass="w-full bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition-colors"
