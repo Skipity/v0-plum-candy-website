@@ -214,7 +214,7 @@
             <div class="text-center md:text-left">
               <h3 class="text-2xl font-bold text-gray-900 mb-4">Eagle Scout</h3>
               <p class="text-lg text-gray-700 mb-6">
-                Aaliyah is the first girl on Long Islans to earn All 139 Merit Badges, and has earned every achievable Eagle Palm. This unprecedented achievement demonstrates exceptional dedication, leadership, and commitment to personal growth and community service.
+                Aaliyah is the first girl on Long Island to earn All 139 Merit Badges, and has earned every achievable Eagle Palm. This unprecedented achievement demonstrates exceptional dedication, leadership, and commitment to personal growth and community service.
               </p>
               <div class="flex flex-wrap gap-3 justify-center md:justify-start">
                 <span class="px-4 py-2 bg-amber-100 text-amber-800 text-sm font-medium rounded-full">Leadership</span>
