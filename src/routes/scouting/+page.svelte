@@ -30,7 +30,7 @@
   <section class="bg-gradient-to-br from-green-100 to-green-200 py-20 px-4 sm:px-6 lg:px-8">
     <div class="max-w-4xl mx-auto text-center">
       <h1 class="text-4xl sm:text-5xl font-bold text-green-900 mb-6" class:animate-fade-in-up={mounted}>
-        First Girl in NY to Earn Every Merit Badge
+        First Girl on Long Island to Earn Every Merit Badge
       </h1>
       <p class="text-xl text-green-700 mb-8" class:animate-fade-in-up={mounted} style="animation-delay: 0.1s;">
         Aaliyah's Journey in Scouting America to Eagle & Beyond
@@ -75,7 +75,7 @@
           
           <!-- Added block quote for First Girl in NY achievement -->
           <blockquote class="border-l-4 border-green-700 pl-6 ml-5 text-center text-3xl italic text-green-700 my-12 flex justify-center items-center gap-3">
-            "First Girl in NY to earn Every Merit Badge" 
+            "First Girl on Long Island to earn Every Merit Badge" 
             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/scouting-america-T4nVKnZb8UTdLcLkIwxpnp2wdx8Yro.webp" alt="Scouting America logo" class="inline-block" />
           </blockquote>
           
@@ -105,7 +105,7 @@
           </blockquote>
           
           <p>
-            As of mid 2025, only 625 Scouts out of 110,000,000 have done it and only 10 girls.
+            As of mid 2025, only 625 Scouts out of 110,000,000 have done it and only 11 girls.
           </p>
           <p>
             For one, it's hard. Like really, really hard. But scouts do hard things all the time.
