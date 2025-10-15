@@ -725,6 +725,16 @@
       <span class="text-sm">•</span>
       <a href="/return-policy" class="text-sm hover:text-white transition-colors">Return Policy</a>
       <span class="text-sm">•</span>
+      <a href="/plum-candy" class="text-sm hover:text-white transition-colors">Plum Candy</a>
+      <span class="text-sm">•</span>
+      <a href="/scouting" class="text-sm hover:text-white transition-colors">Scouting</a>
+      <span class="text-sm">•</span>
+      <a href="/credentials" class="text-sm hover:text-white transition-colors">Credentials</a>
+      <span class="text-sm">•</span>
+      <a href="/quantum" class="text-sm hover:text-white transition-colors">Quantum</a>
+      <span class="text-sm">•</span>
+      <a href="/kitesurfing" class="text-sm hover:text-white transition-colors">Kite Surfing</a>
+      <span class="text-sm">•</span>
       <a href="/terms-conditions" class="text-sm hover:text-white transition-colors">Terms & Conditions</a>
     </div>
     <p class="text-sm">
