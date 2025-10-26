@@ -125,6 +125,16 @@
           <p>
             The storied adventure of Scouting America is made thrilling and worthwhile by the loving support of friends, troops, parents, and counselors. It's why Scouting has endured for more than a century, and will continue to make lives brighter for centuries to come.
           </p>
+          <p>
+          <a href="https://www.midislandtimes.com/pageview/viewer/2025-10-17#page=0" >Mid Island Times.</a>
+          </p>
+           <p>
+          <a href="https://issuu.com/richnercomm/docs/rockville_centre_herald_10-23-2025?ff" >Rockville Centre Herald</a>
+          </p>
+
+           <p>
+          <a href="https://longisland.news12.com/hicksville-teen-makes-history-as-first-girl-on-li-to-earn-every-merit-badge-in-scouting-america" >News 12 Long Islandd</a>
+          </p>
         </div>
       </div>
     </div>
