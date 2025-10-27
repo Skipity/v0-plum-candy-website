@@ -129,7 +129,7 @@
           <a href="https://www.midislandtimes.com/pageview/viewer/2025-10-17#page=0" class="italic text-purple-700 hover:text-purple-900 transition-colors">Mid Island Times.</a>
           </p>
            <p>
-          <a href="https://issuu.com/richnercomm/docs/rockville_centre_herald_10-23-2025?ff" class="italic text-purple-700 hover:text-purple-900 transition-colors">Rockville Centre Herald</a>
+          <a href="https://www.liherald.com/elmont/stories/rockville-centre-aaliyah-corley-earns-all-139-scouting-america-merit-badges,218215" class="italic text-purple-700 hover:text-purple-900 transition-colors">Rockville Centre Herald</a>
           </p>
 
            <p>
