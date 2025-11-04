@@ -352,7 +352,7 @@
             We have a detailed roadmap to get Plum Candy into the hands of thousands of English teachers across the country. Our strategy is as unique as the novel itself and will become clear when we launch itscanon.com.
           </p>
           <p class="text-xl lg:text-2xl leading-relaxed">
-            This book was written to be a modern classic. By acquiring a Prodigy Edition, you're not just buying a book; you're claiming one of the only 5,000 <span class="text-yellow-300 font-bold">definitive "Aaliyah Corley Rookie Cards"</span> that will ever exist.
+            This book was written to be a modern classic. By acquiring a Prodigy Edition, you're claiming ownership of a cultural artifact, one of the only <span class="text-yellow-300 font-bold">definitive "Aaliyah Corley Rookie Cards"</span> that will ever exist.
           </p>
         </div>
       </div>
