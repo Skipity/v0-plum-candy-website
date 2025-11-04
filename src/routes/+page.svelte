@@ -170,19 +170,7 @@
             </div>
           </div>
                   
-        </div>
-        
-        <!-- Learn More Button -->
-        <button 
-          onclick={scrollToContent}
-          class="card-enhanced bg-white/20 backdrop-blur-sm text-white font-semibold py-4 px-8 rounded-lg border border-white/30 hover:bg-white/30 transition-all duration-300 inline-flex items-center gap-2"
-          style="animation-delay: 1s;"
-        >
-          Learn More & Reserve Your Number
-          <svg class="w-5 h-5 animate-float" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </button>
+        </div>       
       </div>
     </div>
   </div>
