@@ -92,7 +92,7 @@
 
 <svelte:head>
   <title>Aaliyah Corley - Plum Candy Presale</title>
-  <meta name="description" content="Reserve your copy of Plum Candy, the debut mystery novel by Aaliyah Corley. Choose from Trade Paperback, Premium Hardcover, or Signed Collector's Edition." />
+  <meta name="description" content="Reserve your copy of Plum Candy, the debut mystery novel by Aaliyah Corley." />
 </svelte:head>
 
 <!-- Hero Section with Purple Gradient -->
@@ -321,10 +321,10 @@
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-20 scroll-reveal">
       <h2 class="text-4xl sm:text-5xl font-bold text-white mb-12">
-        The Prodigy Edition
+        The Rookie Card Edition
       </h2>
       <p class="text-2xl lg:text-3xl text-purple-100 max-w-4xl mx-auto leading-relaxed">
-        A debut novel is a singular moment in an author's career. The Prodigy Edition is like the official "rookie card" for Aaliyah Corley's electrifying debut, Plum Candy.
+        A debut novel is a singular moment in an author's career. The Rookie Card Edition is like the official "rookie card" for Aaliyah Corley's electrifying debut, Plum Candy.
       </p>
     </div>
     
@@ -352,7 +352,7 @@
             We have a detailed roadmap to get Plum Candy into the hands of thousands of English teachers across the country. Our strategy is as unique as the novel itself and will become clear when we launch itscanon.com.
           </p>
           <p class="text-xl lg:text-2xl leading-relaxed">
-            This book was written to be a modern classic. By acquiring a Prodigy Edition, you're claiming ownership of a cultural artifact, one of the only <span class="text-yellow-300 font-bold">definitive "Aaliyah Corley Rookie Cards"</span> that will ever exist.
+            This book was written to be a modern classic. By acquiring a Rookie Card Edition, you'll be claiming ownership of a cultural artifact, one of the only <span class="text-yellow-300 font-bold">definitive "Aaliyah Corley Rookie Cards"</span> that will ever exist.
           </p>
         </div>
       </div>
