@@ -178,7 +178,7 @@
           It is, after all, a Mystery
         </p>
         <p
-          class="text-lg text-purple-50 mb-12 max-w-2xl mx-auto lg:mx-0"
+          class="text-xl lg:text-2xl leading-relaxed text-purple-50 mb-12 max-w-2xl mx-auto lg:mx-0"
           style="animation-delay: 0.6s;"
         >
           Plum Candy is a debut novel by a 17-year-old unknown.<br />
