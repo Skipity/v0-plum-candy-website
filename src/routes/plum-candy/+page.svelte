@@ -183,7 +183,7 @@
           <p>
             The car roared upward, climbing, revving, straining against that
             relentless slope, kept pushing, onward! it toiled and battled
-            against cruel twists and deaddrop turns, onward!
+            against cruel twists and dead-drop turns, onward!
           </p>
 
           <p>
@@ -230,7 +230,9 @@
             The attendant nodded a greeting. “Good afternoon, sir. Fill ’er up?”
           </p>
 
-          <p>The sign above the pump read <em>‘REGULAR 27¢/GAL’</em></p>
+          <p>
+            The sign above the pump read <em>‘REGULAR 27¢/GAL’</em>
+          </p>
 
           <p>
             Noelan replied with a swagger, “Thanks kid. I’ll square up inside.”
@@ -242,29 +244,30 @@
           </p>
 
           <p>
-            Fluorescents hummed overhead. Light reflected off the counter
-            chrome. A radio perched on a high shelf sang a soft doo-wop. Crisp,
-            newly printed magazines vied for attention over the locally made
-            knickknacks and penny candies.
+            Inside: chrome counter, AM radio crackling through doo-wop, maps on
+            a rack. Newly printed magazines vied for attention over a mess of
+            locally made knickknacks and penny candies.
           </p>
 
           <p>
             On the wall behind the counter, a framed newspaper clip headlined: <em
               >‘A PIECE OF FISHSTORY’</em
-            > with a picture of a man smiling while holding a particularly large trout.
-          </p>
-
-          <p>
-            The caption read: <em
-              >‘Mayor Coolidge congratulates Ted Larson on record catch!’</em
-            > But someone had circled certain letters in red pen, then hastily attempted
+            >
+            with a picture of a man smiling while holding a particularly large
+            trout. The caption read:
+            <em>‘Mayor Coolidge congratulates Ted Larson on record catch!’</em> But
+            someone had circled certain letters in red pen, then hastily attempted
             to erase the marks.
           </p>
 
           <p>
             Noelan noticed that the photographed local fishing legend was the
-            shopkeeper who just greeted him. “Afternoon, Ted,” Noelan responded.
-            “What do I owe you for the gas?”
+            shopkeeper behind the counter, “Howdy, stranger!”, who’d just
+            greeted him.
+          </p>
+
+          <p>
+            “Afternoon, Ted,” Noelan responded. “What do I owe you for the gas?”
           </p>
 
           <p>The shopkeeper answered as the store’s bell jingled again.</p>
@@ -277,7 +280,9 @@
             to catch him.
           </p>
 
-          <p>His hand, though shaky, <em>did</em> brandish a revolver.</p>
+          <p>
+            His hand, though shaky, <em>did</em> brandish a revolver.
+          </p>
 
           <p>“Hands up! Money in the bag, now!” the man yelled.</p>
 
@@ -321,8 +326,10 @@
           </p>
 
           <p>
-            Noelan bound the failed robber’s hands. He then snagged the fallen
-            gun, clicked on the safety, and pocketed it.
+            Noelan flipped the punk face-down across the counter, yanked his
+            wrists together, and wrapped them tight with the silver tape (three
+            quick loops, rip, done), then snagged the revolver off the floor,
+            made sure it wasn’t cocked, and slipped it in his waistband.
           </p>
 
           <p>
@@ -433,8 +440,13 @@
           </p>
 
           <p>
-            Noelan pulled the car up to a charming two-story building, its
-            rustic face a warm welcome to weary travelers.
+            Noelan pulled the car into the long driveway when he found the sign
+            and drove on until he saw it.
+          </p>
+
+          <p>
+            The Pine Ridge Inn: two stories of raw pine stacked like a lumber
+            baron’s after-hours binge.
           </p>
 
           <p>
@@ -448,24 +460,18 @@
           </p>
 
           <p>
-            Noelan stepped out and the autumn breeze wafted through the air,
-            rustling the trees that lined the street.
+            Noelan stepped out. The crunch of leaves under boots punctuated an
+            eerie stillness that blanketed Pine Ridge. Rolling up, the Inn’s
+            silhouette had loomed frontier-old, but up close, with the logs
+            still bleeding sap, the sniff said otherwise.
           </p>
 
           <p>
-            The Pine Ridge Inn: three stories of raw pine stacked like a lumber
-            baron’s after-hours binge. Rolling up, its silhouette had loomed
-            frontier-old, but now, the corners still bleeding sap, the sniff
-            said otherwise.
-          </p>
-
-          <p>
-            The crunch of leaves under boots punctuated the eerie stillness that
-            blanketed Pine Ridge. As he stepped inside, the scent of wood polish
-            and something floral greeted him. Behind a counter stood a man in
-            his mid-forties, his friendly face creased with laugh lines that
-            spoke of a life well-lived. Despite his genial appearance, Noelan
-            noted the man’s broad shoulders and the hint of muscle beneath his
+            Inside felt warm and cozy: a fire going, wood polish, something
+            floral like lilac... maybe. Behind a counter stood a man in his
+            mid-forties, his friendly face creased with laugh lines that spoke
+            of a life well-lived. Despite his genial appearance, Noelan noted
+            the man’s broad shoulders and the hint of muscle beneath his
             rolled-up sleeves.
           </p>
 
@@ -583,8 +589,8 @@
           </p>
 
           <p>
-            Relief softened Bennet’s face. Bound hands rose hopeful, pathetic
-            but hopeful. “Then... can I make tracks?”
+            Relief softened Bennet’s face. Hands (still bound behind his back)
+            rose hopeful, pathetic but hopeful. “Then... can I make tracks?”
           </p>
 
           <p>
@@ -621,8 +627,8 @@
           <p>
             “Where does your broad live?” Noelan said slowly, enunciating every
             word, like he was talking to a slow child, or a sputtering suspect.
-            “We’re going to help out with your... about-to-be-kidnapped-princess
-            problem.”
+            “We’re going to help out with your...
+            about-to-be-kidnapped-princess-problem.”
           </p>
 
           <p>
@@ -634,9 +640,8 @@
           </p>
 
           <p>
-            He slumped back in his seat, “Bang a right at the next corner.”
-            Despite the chill, sweat was beading Bennet’s brow in the rearview
-            mirror.
+            He slumped back in his seat, “Hang a left up past them elk, over
+            there.” Despite the chill, sweat was beading Bennet’s brow.
           </p>
         </div>
       </div>

@@ -1,3 +1,8 @@
+   
+ 
+
+   
+   
 Plum Candy   
 表面は甘く、中は苦い   
 *It is, after all, a mystery.* 
@@ -58,7 +63,7 @@ Noelan nodded, a casual one-handed grip on the steering wheel. “Small town, sm
 
 Noelan nodded, grinned, and kept going straight. 
 
-The car roared upward, climbing, revving, straining against that relentless slope, kept pushing, onward\! it toiled and battled against cruel twists and deaddrop turns, onward\!  
+The car roared upward, climbing, revving, straining against that relentless slope, kept pushing, onward\! it toiled and battled against cruel twists and dead-drop turns, onward\!  
 
 A sharp bend reshaped the view. Sunlight became a blade that stabbed through the windshield and punished Noelan’s eyes. He squinted. Motes of fractured color. His peripheral, blind. He had to focus or they’d fly off a cliff. Lawson was saying something, but it faded to nothing as Noelan focused round the dangerous turn. 
 
@@ -82,13 +87,13 @@ Noelan replied with a swagger, “Thanks kid. I’ll square up inside.”
 
 Gasoline pumping, price ticker spinning, Noelan made his way into the store. Above the door, another bell clanged. 
 
-Fluorescents hummed overhead. Light reflected off the counter chrome. A radio perched on a high shelf sang a soft doo-wop. Crisp, newly printed magazines vied for attention over the locally made knickknacks and penny candies. 
+Inside: chrome counter, AM radio crackling through doo-wop, maps on a rack. Newly printed magazines vied for attention over a mess of locally made knickknacks and penny candies. 
 
-On the wall behind the counter, a framed newspaper clip headlined: ‘*A PIECE OF FISHSTORY*’ with a picture of a man smiling while holding a particularly large trout.  
+On the wall behind the counter, a framed newspaper clip headlined: ‘*A PIECE OF FISHSTORY*’ with a picture of a man smiling while holding a particularly large trout. The caption read: ‘*Mayor Coolidge congratulates Ted Larson on record catch\!*’ But someone had circled certain letters in red pen, then hastily attempted to erase the marks. 
 
-The caption read: ‘*Mayor Coolidge congratulates Ted Larson on record catch\!*’ But someone had circled certain letters in red pen, then hastily attempted to erase the marks. 
+Noelan noticed that the photographed local fishing legend was the shopkeeper behind the counter, “Howdy, stranger\!”, who’d just greeted him.  
 
-Noelan noticed that the photographed local fishing legend was the shopkeeper who just greeted him. “Afternoon, Ted,” Noelan responded. “What do I owe you for the gas?” 
+“Afternoon, Ted,” Noelan responded. “What do I owe you for the gas?” 
 
 The shopkeeper answered as the store’s bell jingled again. 
 
@@ -116,7 +121,7 @@ Before the man knew what happened, Noelan had him back on his feet, face-down on
 
 “Small town. No rope. Got duct tape, though.” The shopkeeper reached under the counter and tossed a roll to Noelan. 
 
-Noelan bound the failed robber’s hands. He then snagged the fallen gun, clicked on the safety, and pocketed it. 
+Noelan flipped the punk face-down across the counter, yanked his wrists together, and wrapped them tight with the silver tape (three quick loops, rip, done), then snagged the revolver off the floor, made sure it wasn’t cocked, and slipped it in his waistband. 
 
 “Now then,” Noelan turned to the shopkeeper, his tone conversational, “how much for the gas, again?” He glanced at the bound man, “let’s add a bottle of pop for our unexpected guest.” 
 
@@ -160,19 +165,19 @@ Silence slammed into the car. Noelan just reached up and adjusted the rearview m
 
 “That’s why I stuck up the joint,” Bennet finally coughed up. “My fiancée... they said she looked too pretty for the gal of a broke mug like me. Promised to make the world right if I didn’t pony up by tonight. I couldn’t let that happen. I just couldn’t\!” 
 
-“Hmm,” was all Lawson Wright replied, a look of skepticism on his face. 
+“Hmm,” was all Lawson Wright replied, a look of skepticism on his face.  
 
-Noelan pulled the car up to a charming two-story building, its rustic face a warm welcome to weary travelers.  
+Noelan pulled the car into the long driveway when he found the sign and drove on until he saw it. 
+
+The Pine Ridge Inn: two stories of raw pine stacked like a lumber baron’s after-hours binge. 
 
 “I’ll wait here with our guest,” Lawson said. “You go book us a room.” 
 
 Glaring coldly at Bennet in the backseat, Noelan said, “Alright. Stay put. Got it, knucklehead?” 
 
-Noelan stepped out and the autumn breeze wafted through the air, rustling the trees that lined the street.  
+Noelan stepped out. The crunch of leaves under boots punctuated an eerie stillness that blanketed Pine Ridge. Rolling up, the Inn’s silhouette had loomed frontier-old, but up close, with the logs still bleeding sap, the sniff said otherwise. 
 
-The Pine Ridge Inn: three stories of raw pine stacked like a lumber baron’s after-hours binge. Rolling up, its silhouette had loomed frontier-old, but now, the corners still bleeding sap, the sniff said otherwise. 
-
-The crunch of leaves under boots punctuated the eerie stillness that blanketed Pine Ridge. As he stepped inside, the scent of wood polish and something floral greeted him. Behind a counter stood a man in his mid-forties, his friendly face creased with laugh lines that spoke of a life well-lived. Despite his genial appearance, Noelan noted the man’s broad shoulders and the hint of muscle beneath his rolled-up sleeves. 
+Inside felt warm and cozy: a fire going, wood polish, something floral like lilac... maybe. Behind a counter stood a man in his mid-forties, his friendly face creased with laugh lines that spoke of a life well-lived. Despite his genial appearance, Noelan noted the man’s broad shoulders and the hint of muscle beneath his rolled-up sleeves. 
 
 “Welcome to Pine Ridge Inn.” His voice flowed. His eyes pierced. The chair creaked and groaned as the innkeeper rose. “What brings you to our neck of the woods?” 
 
@@ -216,7 +221,7 @@ Noelan walked back to the car and slid back into the driver’s seat, his expres
 
 Noelan chuckled and exchanged a glance with Lawson. “No jail. Not yet.”  
 
-Relief softened Bennet’s face. Bound hands rose hopeful, pathetic but hopeful. “Then... can I make tracks?”  
+Relief softened Bennet’s face. Hands (still bound behind his back) rose hopeful, pathetic but hopeful. “Then... can I make tracks?”  
 
 “Not so fast.” Lawson twisted in his seat to look back at him. “How exactly are you planning on getting that money?” 
 
@@ -238,7 +243,7 @@ Something cold crossed Noelan’s expression. “Is this fiancée of yours close
 
 Bennet opened his mouth to spit out some excuse, but the words got somehow stuck when he caught Noelan’s glare. There was something in those eyes — the confidence, the danger — that made Bennet recall how effortlessly he’d been subdued. Suddenly, the idea of a stranger helping didn’t seem so far-fetched.  
 
-He slumped back in his seat, “Bang a right at the next corner.” Despite the chill, sweat was beading Bennet’s brow in the rearview mirror.
+He slumped back in his seat, “Hang a left up past them elk, over there.” Despite the chill, sweat was beading Bennet’s brow.
 
  
 
