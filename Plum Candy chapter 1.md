@@ -1,4 +1,3 @@
-   
  
 
    
@@ -229,7 +228,7 @@ Noelan didn’t say anything and simply glared at him through the rearview mirro
 
 “Suppose I could get my piece back?” he muttered after a moment. “I’d still have time to—” 
 
-“Get serious,” Lawson said. “You really think we’d let you go rob someone else?”  
+“Wise up,” Lawson said. “You really think we’d let you go rob someone else?”  
 
 Noelan scoffed. “Not a chance, jackass.”  
 
@@ -239,11 +238,8 @@ Something cold crossed Noelan’s expression. “Is this fiancée of yours close
 
 “Huh?” Bennet asked.  
 
-“Where does your broad live?” Noelan said slowly, enunciating every word, like he was talking to a slow child, or a sputtering suspect. “We’re going to help out with your... about-to-be-kidnapped-princess problem.” 
+“Where does your broad live?” Noelan said slowly, enunciating every word, like he was talking to a slow child, or a sputtering suspect. “We’ll head there now. Protect your little princess.” 
 
-Bennet opened his mouth to spit out some excuse, but the words got somehow stuck when he caught Noelan’s glare. There was something in those eyes — the confidence, the danger — that made Bennet recall how effortlessly he’d been subdued. Suddenly, the idea of a stranger helping didn’t seem so far-fetched.  
+Bennet opened his mouth to spit out some excuse, but the words got somehow stuck when he caught Noelan’s glare. He slumped back in his seat, suddenly corporative.  
 
-He slumped back in his seat, “Hang a left up past them elk, over there.” Despite the chill, sweat was beading Bennet’s brow.
-
- 
-
+“Hang a left up past them elk, over there.” Despite the chill, sweat was beading Bennet’s brow.

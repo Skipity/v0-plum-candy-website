@@ -273,11 +273,11 @@
           <p>The shopkeeper answered as the store’s bell jingled again.</p>
 
           <p>
-            A man stumbled in. The bandanna was red and paisley. <em
+            A man stumbled in. The bandanna was red and paisley. <em
               >Paisley!</em
-            > Like some dime-novel outlaw’s idea of a menacing mask. His clothes hung
-            loose on his frame, perhaps “borrowed” from someone larger and too slow
-            to catch him.
+            > Like some dime-novel outlaw’s idea of a menacing mask. His clothes
+            hung loose on his frame, perhaps “borrowed” from someone larger and
+            too slow to catch him.
           </p>
 
           <p>
@@ -609,7 +609,7 @@
           </p>
 
           <p>
-            “Get serious,” Lawson said. “You really think we’d let you go rob
+            “Wise up,” Lawson said. “You really think we’d let you go rob
             someone else?”
           </p>
 
@@ -627,21 +627,18 @@
           <p>
             “Where does your broad live?” Noelan said slowly, enunciating every
             word, like he was talking to a slow child, or a sputtering suspect.
-            “We’re going to help out with your...
-            about-to-be-kidnapped-princess-problem.”
+            “We’ll head there now. Protect your little princess.”
           </p>
 
           <p>
             Bennet opened his mouth to spit out some excuse, but the words got
-            somehow stuck when he caught Noelan’s glare. There was something in
-            those eyes — the confidence, the danger — that made Bennet recall
-            how effortlessly he’d been subdued. Suddenly, the idea of a stranger
-            helping didn’t seem so far-fetched.
+            somehow stuck when he caught Noelan’s glare. He slumped back in his
+            seat, suddenly corporative.
           </p>
 
           <p>
-            He slumped back in his seat, “Hang a left up past them elk, over
-            there.” Despite the chill, sweat was beading Bennet’s brow.
+            “Hang a left up past them elk, over there.” Despite the chill, sweat
+            was beading Bennet’s brow.
           </p>
         </div>
       </div>
@@ -893,8 +890,8 @@
                 “I’d still have time to—”
               </p>
               <p>
-                “Get serious,” Lawson said. “You really think we’d let you go
-                rob someone else?”
+                “Wise up,” Lawson said. “You really think we’d let you go rob
+                someone else?”
               </p>
               <p>Noelan scoffed. “Not a chance, jackass.”</p>
               <p>“But my fiancée!” Bennet’s voice cracked.</p>
